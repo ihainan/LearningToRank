@@ -1,0 +1,9 @@
+训练：在本地，用Spark
+1、设置本地路径，包括：训练集路径（inPath），模型输出路径(LRPath和LiRPath)
+2、打包
+3、Spark submit 
+
+测试：在Hadoop上做，对HDFS上的测试集进行测试
+1、手动上传模型到HDFS
+2、设置HDSF路径，包括测试集路径、结果路径、LiRModel路径和LRModel路径，都是Hadoop job的参数
+3、提交Hadoop job
